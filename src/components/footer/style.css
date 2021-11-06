@@ -1,0 +1,13 @@
+.footer__display{
+    position:absolute;
+    display: flex;
+    justify-content: center;
+    bottom:0;
+    width:100vw;
+    height:100px;   /* Height of the footer */
+    background:#000000;
+}
+.sw__logo{
+    height: 100px;
+    width: 100px;
+}
