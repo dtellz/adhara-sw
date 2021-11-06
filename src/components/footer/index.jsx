@@ -6,7 +6,7 @@ import swlog from '../../assets/footer.png'
 const Footer = () => {
     return (
         <footer className='footer__display'>
-            <img src={swlog} className='sw__logo'></img>
+            <img src={swlog} alt='May the force be with you' className='sw__logo'></img>
         </footer>
 
     )

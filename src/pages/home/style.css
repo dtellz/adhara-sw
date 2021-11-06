@@ -3,3 +3,7 @@
     flex-direction: row;
     justify-content: center;
 }
+
+.displayed__data{
+    min-height: 78vh;
+}

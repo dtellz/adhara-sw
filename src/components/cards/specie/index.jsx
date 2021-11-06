@@ -1,32 +1,32 @@
 import * as React from 'react';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
+import '../style.css'
 
-const PeopleCard = (props) => {
+const SpecieCard = (props) => {
     return (
-        <Card sx={{ maxWidth: 345 }}>
+        <Card className='card specie'>
             <CardActionArea>
                 <CardContent>
                     <Typography gutterBottom variant="h5" component="div">
-                        {props.name}
+                        {props.info.name}
                     </Typography>
                     <Typography variant="body2" color="text.secondary">
-                        Gender: {props.gender}
+                        <span className='card__subject'>Avg. height: </span>{props.info.average_height}
                     </Typography>
                     <Typography variant="body2" color="text.secondary">
-                        Birth year: {props.birth}
+                        <span className='card__subject'>Avg. Lifespan: </span>{props.info.average_lifespan}
                     </Typography>
                     <Typography variant="body2" color="text.secondary">
-                        Hair color: {props.hairColor}
+                        <span className='card__subject'>Classification:</span> {props.info.classification}
                     </Typography>
                     <Typography variant="body2" color="text.secondary">
-                        Eye color: {props.eyeColor}
+                        <span className='card__subject'>Designation:</span> {props.info.designation}
                     </Typography>
                     <Typography variant="body2" color="text.secondary">
-                        Height: {props.height}
+                        <span className='card__subject'>Language: </span>{props.info.language}
                     </Typography>
                 </CardContent>
             </CardActionArea>
@@ -35,4 +35,4 @@ const PeopleCard = (props) => {
 }
 
 
-export default PeopleCard;
+export default SpecieCard;

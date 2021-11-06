@@ -14,12 +14,12 @@ export default function EntitySelect(props) {
     };
 
     const searchableEntities = [
-        'People',
-        'Films',
-        'Starships',
-        'Vehicles',
-        'Species',
-        'Planets'
+        'people',
+        'films',
+        'starships',
+        'vehicles',
+        'species',
+        'planets'
     ];
 
     return (

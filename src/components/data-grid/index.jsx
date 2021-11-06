@@ -1,32 +1,42 @@
-import PeopleCard from "../cards/people-card";
+import PeopleCard from "../cards/people";
+import StarshipCard from "../cards/starship";
+import FilmCard from "../cards/film";
+import VehicleCard from "../cards/vehicle";
+import SpecieCard from "../cards/specie";
+import PlanetCard from "../cards/planet";
+import React from 'react';
+import './style.css'
 
 
 
 const DataGrid = (props) => {
     const data = props.data;
+    //data={searchedData} entity={entity}
+    console.log(data);
+
+    let listTitle = props.entity ?? 'try to make a search';
+    listTitle = listTitle.charAt(0).toUpperCase() + listTitle.slice(1);
+
+
     return (
-        <PeopleCard name='diego' gender='male' birth='test' hairColor='brown' eyeColor='brown' height='80kg' ></PeopleCard>
+        <React.Fragment>
+            <h1>{listTitle}</h1>
+            <div className='cards__display'>
+                {data && listTitle === 'People' ? data.map(elem => elem !== null ? <PeopleCard info={elem}></PeopleCard> : '') : ''}
+                {data && listTitle === 'Films' ? data.map(elem => elem !== null ? <FilmCard info={elem}></FilmCard> : '') : ''}
+                {data && listTitle === 'Starships' ? data.map(elem => elem !== null ? <StarshipCard info={elem}></StarshipCard> : '') : ''}
+                {data && listTitle === 'Vehicles' ? data.map(elem => elem !== null ? <VehicleCard info={elem}></VehicleCard> : '') : ''}
+                {data && listTitle === 'Species' ? data.map(elem => elem !== null ? <SpecieCard info={elem}></SpecieCard> : '') : ''}
+                {data && listTitle === 'Planets' ? data.map(elem => elem !== null ? <PlanetCard info={elem}></PlanetCard> : '') : ''}
+            </div>
+        </React.Fragment>
+
     )
 }
 
 export default DataGrid;
 
-{/* <Typography gutterBottom variant="h5" component="div">
-                        {props.name}
-                    </Typography>
-                    <Typography variant="body2" color="text.secondary">
-                        Gender: {props.gender}
-                    </Typography>
-                    <Typography variant="body2" color="text.secondary">
-                        Birth year: {props.birth}
-                    </Typography>
-                    <Typography variant="body2" color="text.secondary">
-                        Hair color: {props.hairColor}
-                    </Typography>
-                    <Typography variant="body2" color="text.secondary">
-                        Eye color: {props.eyeColor}
-                    </Typography>
-                    <Typography variant="body2" color="text.secondary">
-                        Height: {props.height}
-                    </Typography>
-   */}
+
+/**
+ * { this.state.airports.map(a => <Airport key={a.code} airport={a}></Airport>) }
+ */

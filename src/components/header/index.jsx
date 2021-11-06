@@ -15,7 +15,7 @@ const Header = () => {
             <AppBar position="static" color='primary'>
                 <Toolbar>
                     {/* <h3 className='header__text'>STAR WARS</h3> */}
-                    <img className='header__logo' src={swTitle}></img>
+                    <img className='header__logo' alt='Star wars logo' src={swTitle}></img>
                 </Toolbar>
             </AppBar>
         </Box>

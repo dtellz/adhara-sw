@@ -1,0 +1,28 @@
+.card{
+    display: flex;
+    justify-content: center;
+    word-wrap: wrap;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.people{
+    width: 250px;
+}
+.film{
+    width: 500px;
+}
+.planet{
+    width: 300px;
+}
+.specie{
+    width: 200px;
+}
+.starship{
+    width: 450px;
+}
+.vehicle{
+    width: 350px;
+}
+.card__subject{
+    font-weight: 700;
+}
