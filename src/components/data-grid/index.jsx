@@ -20,7 +20,7 @@ const DataGrid = (props) => {
 
     return (
         <div className='main__container'>
-            <h1>List of {listTitle}</h1>
+            <h1>{listTitle}</h1>
             <div className='cards__display'>
                 {data && listTitle === 'People' ? data.map(elem => elem !== null ? <PeopleCard info={elem}></PeopleCard> : '') : ''}
                 {data && listTitle === 'Films' ? data.map(elem => elem !== null ? <FilmCard info={elem}></FilmCard> : '') : ''}
