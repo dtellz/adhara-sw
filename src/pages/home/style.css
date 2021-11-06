@@ -5,5 +5,11 @@
 }
 
 .displayed__data{
-    min-height: 78vh;
+    /* display: flex;
+    justify-content: space-evenly;
+    min-height: 78vh; */
+}
+.main__view{
+  
+
 }

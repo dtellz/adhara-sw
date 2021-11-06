@@ -19,8 +19,8 @@ const DataGrid = (props) => {
 
 
     return (
-        <React.Fragment>
-            <h1>{listTitle}</h1>
+        <div className='main__container'>
+            <h1>List of {listTitle}</h1>
             <div className='cards__display'>
                 {data && listTitle === 'People' ? data.map(elem => elem !== null ? <PeopleCard info={elem}></PeopleCard> : '') : ''}
                 {data && listTitle === 'Films' ? data.map(elem => elem !== null ? <FilmCard info={elem}></FilmCard> : '') : ''}
@@ -29,7 +29,7 @@ const DataGrid = (props) => {
                 {data && listTitle === 'Species' ? data.map(elem => elem !== null ? <SpecieCard info={elem}></SpecieCard> : '') : ''}
                 {data && listTitle === 'Planets' ? data.map(elem => elem !== null ? <PlanetCard info={elem}></PlanetCard> : '') : ''}
             </div>
-        </React.Fragment>
+        </div>
 
     )
 }

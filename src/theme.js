@@ -8,7 +8,8 @@ const theme = createTheme({
         secondary: {
             main: '#f9d71c'
         }
-    },
+    }
+
     // components: {
     //     MuiAppBar: {
     //         styleOverrides: {

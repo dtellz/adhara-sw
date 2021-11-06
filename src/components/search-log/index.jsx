@@ -1,7 +1,10 @@
 import { useEffect, useState } from "react";
+import { useNavigate } from 'react-router-dom';
 
 
-const SearchLog = () => {
+const SearchLog = (props) => {
+
+    const navigate = useNavigate();
 
     const [people, setPeople] = useState();
     const [films, setFilms] = useState();
@@ -9,6 +12,8 @@ const SearchLog = () => {
     const [vehicles, setVehicles] = useState();
     const [species, setSpecies] = useState();
     const [planets, setPlanets] = useState();
+    const [isLogged, setIsLogged] = useState(false)
+    const [searchLog, setSearchLog] = useState();
 
     useEffect(() => {
         const peopleLog = localStorage.getItem('people');
@@ -24,12 +29,41 @@ const SearchLog = () => {
         setVehicles(JSON.parse(vehiclesLog));
         setSpecies(JSON.parse(speciesLog));
         setPlanets(JSON.parse(planetsLog))
+
+        setIsLogged(true);
+
     }, []);
 
+    useEffect(() => {
+        let auxArr = [];
+        if (people) auxArr.push(people[people.length - 1]);
+        if (films) auxArr.push(films[films.length - 1])
+        if (starships) auxArr.push(starships[starships.length - 1])
+        if (vehicles) auxArr.push(vehicles[vehicles.length - 1])
+        if (species) auxArr.push(species[species.length - 1])
+        if (planets) auxArr.push(planets[planets.length - 1])
+
+        auxArr.sort((a, b) => {
+            return b.date - a.date;
+        })
+        setSearchLog(auxArr);
+    }, [isLogged])
+
+
+    function loadPastSearch(e) {
+        console.log(e.target.textContent.split('//')[1])
+        props.closeModal();
+        navigate(`/home/${e.target.textContent.split('//')[1]}`)
+    }
 
     return (
-        <h1>people</h1>
+        <div>
+            <h2>Click a log to load it again</h2>
+            {isLogged ? searchLog.map(e => <p onClick={loadPastSearch}>{new Date(e.date) + ' //' + e.name}</p>) : ''}
+        </div>
+
     )
 }
 
 export default SearchLog;
+
