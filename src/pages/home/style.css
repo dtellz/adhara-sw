@@ -5,9 +5,8 @@
 }
 
 .displayed__data{
-    /* display: flex;
-    justify-content: space-evenly;
-    min-height: 78vh; */
+
+    min-height: 70vh; 
 }
 .main__view{
   

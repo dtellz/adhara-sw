@@ -51,9 +51,9 @@ const SearchLog = (props) => {
 
 
     function loadPastSearch(e) {
-        console.log(e.target.textContent.split('//')[1])
+        //console.log(e.target.textContent.split('//')[1])
         props.closeModal();
-        navigate(`/home/${e.target.textContent.split('//')[1]}`)
+        navigate(`/load/${e.target.textContent.split('//')[1]}`)
     }
 
     return (

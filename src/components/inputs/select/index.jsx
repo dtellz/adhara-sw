@@ -25,7 +25,7 @@ export default function EntitySelect(props) {
     return (
         <div>
             <FormControl variant="standard" sx={{ m: 1, minWidth: 120 }}>
-                <InputLabel id="select-label" className='label__text'>Entity</InputLabel>
+                <InputLabel id="select-label" className='label__text'>Search entity</InputLabel>
                 <Select
                     labelId="select-label"
                     id="entity-select"
