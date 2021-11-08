@@ -3,7 +3,11 @@ import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
-
+/**
+ * 
+ * @param {*} props selected: is a callback function to send input value to father component
+ * @returns a select component displaying a list of posible entities to search.
+ */
 export default function EntitySelect(props) {
 
     const [entity, setEntity] = useState('');

@@ -8,7 +8,7 @@
 
     min-height: 70vh; 
 }
-.main__view{
-  
-
+.loading__rotate{
+    display: flex;
+    justify-content: center;
 }

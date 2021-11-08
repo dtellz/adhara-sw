@@ -1,7 +1,11 @@
 import { useState, useEffect } from 'react';
 import EntitySelect from '../inputs/select'
 import LogButton from '../inputs/log-btn';
-
+/**
+ * 
+ * @param {*} props dataFlow: callback function to send fetched data to its parent component
+ * @returns 
+ */
 
 const SearchForm = (props) => {
 
@@ -18,6 +22,7 @@ const SearchForm = (props) => {
     // const data = useFetch(searchedEntity);
     // console.log('fetch responded:', data)
 
+
     useEffect(() => {
 
         const entity = searchedEntity;
@@ -31,22 +36,17 @@ const SearchForm = (props) => {
                 for (let i = 1; i <= d.count; i++) {
                     fetch(`https://swapi.dev/api/${entity}/${i}`)
                         .then(r => {
-                            // si recibimos respuesta del servidor y la respuesta no es 200-299,
-                            // no tenemos el personaje, por lo que lanzamos un error
-                            if (!r.ok) throw new Error('Error del servidor');
+                            if (!r.ok) throw new Error('Server error');
                             return r.json();
                         })
                         .then(p => {
-                            // setData(oldValue => oldValue.concat([{ ...p, id: i }]));
                             data.push(p)
                             data.length === d.count ? props.dataFlow(data, searchedEntity) : console.log()
                         })
                         // in case there is an error receiving an element, we set it to null to manage it later on
                         .catch(() => {
-                            // setData(oldValue => oldValue.concat([null]))
                             data.push(null)
                         })
-                    // props.dataFlow(data, entity)
                 }
             });
 

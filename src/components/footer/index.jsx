@@ -1,6 +1,5 @@
 import './style.css';
 import swlog from '../../assets/footer.png'
-import { AppBar } from '@mui/material';
 
 
 

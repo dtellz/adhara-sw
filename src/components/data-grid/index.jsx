@@ -8,7 +8,12 @@ import React from 'react';
 import useWisdom from '../../hooks/usewisdom/index.jsx'
 import './style.css'
 
-
+/**
+ * 
+ * @param {*} props data, entity
+ * 
+ * @returns depending on entity it returns it related cards
+ */
 
 const DataGrid = (props) => {
     const data = props.data;
@@ -16,8 +21,10 @@ const DataGrid = (props) => {
     //console.log(data);
     const phrase = useWisdom()
 
+
     let listTitle = props.entity ?? phrase;
     listTitle = listTitle.charAt(0).toUpperCase() + listTitle.slice(1);
+
 
 
     return (

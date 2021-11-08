@@ -12,7 +12,7 @@ const Header = () => {
     const navigate = useNavigate();
 
     return (
-        <Box sx={{ flexGrow: 1 }}>
+        <Box sx={{ flexGrow: 1 }} className='header__box'>
             <AppBar position="static" color='primary'>
                 <Toolbar>
                     {/* <h3 className='header__text'>STAR WARS</h3> */}

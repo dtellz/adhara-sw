@@ -4,6 +4,11 @@ import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
 import '../style.css'
+/**
+ * 
+ * @param {*} props  info -> data received from the endpoint
+ * @returns  Composition of the card
+ */
 
 const FilmCard = (props) => {
     return (

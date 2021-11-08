@@ -53,13 +53,13 @@ const SearchLog = (props) => {
     function loadPastSearch(e) {
         //console.log(e.target.textContent.split('//')[1])
         props.closeModal();
-        navigate(`/load/${e.target.textContent.split('//')[1]}`)
+        navigate(`/home/${e.target.textContent.split('//')[1]}`)
     }
 
     return (
         <div>
-            <h2>Click a log to load it again</h2>
-            {isLogged ? searchLog.map(e => <p onClick={loadPastSearch}>{new Date(e.date) + ' //' + e.name}</p>) : ''}
+            <h2>Click a log to load information</h2>
+            {isLogged ? searchLog.map((e, i) => <p onClick={loadPastSearch} key={i}>{new Date(e.date) + ' //' + e.name}</p>) : ''}
         </div>
 
     )
