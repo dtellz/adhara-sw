@@ -5,7 +5,7 @@
     Position: Frontend Junior
 
 
-![alt text](https://github.com/dtellz/adhara-sw/blob/feature/front/src/assets/footer.jpg?raw=true)
+![may the force be with you](https://github.com/dtellz/adhara-sw/blob/feature/front/src/assets/footer.png?raw=true)
 
 
 ## 1.- INTRODUCING [https://swapi.dev ](https://swapi.dev ) 
