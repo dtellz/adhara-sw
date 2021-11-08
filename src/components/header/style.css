@@ -1,0 +1,11 @@
+.header__text{
+    color: #00FF00;
+}
+.header__logo{
+    height: 35px;
+    width: 70px;
+}
+.header__box{
+    padding-bottom: 2rem;
+}
+
