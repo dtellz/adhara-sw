@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import EntitySelect from '../inputs/select'
-import LogButton from '../inputs/log-btn';
+import LogButton from '../inputs/log-button';
 /**
  * 
  * @param {*} props dataFlow: callback function to send fetched data to its parent component
