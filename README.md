@@ -1,11 +1,11 @@
-# Project name:        
-            adhara-sw
-
-
+# Project name: adhara-sw  
+        
     Developer: Diego Téllez Barrero
     Requirements: Jr. Code Assessment-FRONT
     Position: Frontend Junior
-    Company: ADHARA BLOCKCHAIN TECHNOLOGIES
+
+
+![alt text](https://github.com/dtellz/adhara-sw/blob/feature/front/footer.jpg?raw=true)
 
 
 ## 1.- INTRODUCING [https://swapi.dev ](https://swapi.dev ) 
