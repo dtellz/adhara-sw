@@ -2,10 +2,10 @@
             adhara-sw
 
 
-Developer: Diego Téllez Barrero
-Requirements: Jr. Code Assessment-FRONT
-Position: Frontend Junior
-Company: ADHARA BLOCKCHAIN TECHNOLOGIES
+    Developer: Diego Téllez Barrero
+    Requirements: Jr. Code Assessment-FRONT
+    Position: Frontend Junior
+    Company: ADHARA BLOCKCHAIN TECHNOLOGIES
 
 
 ## 1.- INTRODUCING [https://swapi.dev ](https://swapi.dev ) 
@@ -16,85 +16,85 @@ All endpoints follow the same structure: https://swapi.dev/api/entity/id
 
 ### PEOPLE:
 
-{
-    "birth_year": "19 BBY",
-    "eye_color": "Blue",
-    "gender": "Male",
-    "hair_color": "Blond",
-    "height": "172",
-    "mass": "77",
-    "name": "Luke Skywalker",
-}
+    {
+        "birth_year": "19 BBY",
+        "eye_color": "Blue",
+        "gender": "Male",
+        "hair_color": "Blond",
+        "height": "172",
+        "mass": "77",
+        "name": "Luke Skywalker",
+    }
 ### FILMS:
-{
-    "director": "George Lucas",
-    "episode_id": 4,
-    "opening_crawl": "It is a period of civil war.\n\nRebel spaceships, striking\n\nfrom a hidden base, have won\n\ntheir first victory against\n\nthe evil Galactic Empire.\n\n\n\nDuring the battle, Rebel\n\nspies managed to steal secret\r\nplans to the Empire's\n\nultimate weapon, the DEATH\n\nSTAR, an armored space\n\nstation with enough power\n\nto destroy an entire planet.\n\n\n\nPursued by the Empire's\n\nsinister agents, Princess\n\nLeia races home aboard her\n\nstarship, custodian of the\n\nstolen plans that can save her\n\npeople and restore\n\nfreedom to the galaxy....",
-    "producer": "Gary Kurtz, Rick McCallum",
-    "release_date": "1977-05-25",
-    "title": "A New Hope",
-}
+    {
+        "director": "George Lucas",
+        "episode_id": 4,
+        "opening_crawl": "It is a period of civil war.\n\nRebel spaceships, striking\n\nfrom a hidden base, have won\n\ntheir first victory against\n\nthe evil Galactic Empire.\n\n\n\nDuring the battle, Rebel\n\nspies managed to steal secret\r\nplans to the Empire's\n\nultimate weapon, the DEATH\n\nSTAR, an armored space\n\nstation with enough power\n\nto destroy an entire planet.\n\n\n\nPursued by the Empire's\n\nsinister agents, Princess\n\nLeia races home aboard her\n\nstarship, custodian of the\n\nstolen plans that can save her\n\npeople and restore\n\nfreedom to the galaxy....",
+        "producer": "Gary Kurtz, Rick McCallum",
+        "release_date": "1977-05-25",
+        "title": "A New Hope",
+    }
 
 ### STARSHIPS:
 
-{
-    "MGLT": "10 MGLT",
-    "cargo_capacity": "1000000000000",
-    "consumables": "3 years",
-    "cost_in_credits": "1000000000000",
-    "crew": "342953",
-    "hyperdrive_rating": "4.0",
-    "length": "120000",
-    "manufacturer": "Imperial Department of Military Research, Sienar Fleet Systems",
-    "max_atmosphering_speed": "n/a",
-    "model": "DS-1 Orbital Battle Station",
-    "name": "Death Star",
-    "passengers": "843342",
-    "starship_class": "Deep Space Mobile Battlestation",
-}
+    {
+        "MGLT": "10 MGLT",
+        "cargo_capacity": "1000000000000",
+        "consumables": "3 years",
+        "cost_in_credits": "1000000000000",
+        "crew": "342953",
+        "hyperdrive_rating": "4.0",
+        "length": "120000",
+        "manufacturer": "Imperial Department of Military Research, Sienar Fleet Systems",
+        "max_atmosphering_speed": "n/a",
+        "model": "DS-1 Orbital Battle Station",
+        "name": "Death Star",
+        "passengers": "843342",
+        "starship_class": "Deep Space Mobile Battlestation",
+    }
 
 ### VEHICLES:
 
-{
-    "cargo_capacity": "50000",
-    "consumables": "2 months",
-    "cost_in_credits": "150000",
-    "crew": "46",
-    "length": "36.8",
-    "manufacturer": "Corellia Mining Corporation",
-    "max_atmosphering_speed": "30",
-    "model": "Digger Crawler",
-    "name": "Sand Crawler",
-    "passengers": "30",
-    "vehicle_class": "wheeled"
-}
+    {
+        "cargo_capacity": "50000",
+        "consumables": "2 months",
+        "cost_in_credits": "150000",
+        "crew": "46",
+        "length": "36.8",
+        "manufacturer": "Corellia Mining Corporation",
+        "max_atmosphering_speed": "30",
+        "model": "Digger Crawler",
+        "name": "Sand Crawler",
+        "passengers": "30",
+        "vehicle_class": "wheeled"
+    }
 
 
 ### SPECIES:
 
-{
-    "average_height": "2.1",
-    "average_lifespan": "400",
-    "classification": "Mammal",
-    "designation": "Sentient",
-    "language": "Shyriiwook",
-    "name": "Wookie",
-    "skin_colors": "gray",
-}
+    {
+        "average_height": "2.1",
+        "average_lifespan": "400",
+        "classification": "Mammal",
+        "designation": "Sentient",
+        "language": "Shyriiwook",
+        "name": "Wookie",
+        "skin_colors": "gray",
+    }
 
 ### PLANETS:
 
-{
-    "climate": "Arid",
-    "diameter": "10465",
-    "gravity": "1",
-    "name": "Tatooine",
-    "orbital_period": "304",
-    "population": "120000",
-    "rotation_period": "23",
-    "surface_water": "1",
-    "terrain": "Dessert",
-}
+    {
+        "climate": "Arid",
+        "diameter": "10465",
+        "gravity": "1",
+        "name": "Tatooine",
+        "orbital_period": "304",
+        "population": "120000",
+        "rotation_period": "23",
+        "surface_water": "1",
+        "terrain": "Dessert",
+    }
 
 ## 2.- INTRODUCTION:
 
