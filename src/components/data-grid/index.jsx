@@ -16,19 +16,16 @@ import './style.css'
  */
 
 const DataGrid = (props) => {
-    const data = props.data;
-    //data={searchedData} entity={entity}
-    //console.log(data);
-    const phrase = useWisdom()
 
+    const data = props.data;
+    const phrase = useWisdom()
 
     let listTitle = props.entity ?? phrase;
     listTitle = listTitle.charAt(0).toUpperCase() + listTitle.slice(1);
 
-
-
     return (
         <div className='main__container'>
+
             <div className='title__container'>
                 <h1 className='title'>{listTitle}</h1>
             </div>
@@ -49,6 +46,3 @@ const DataGrid = (props) => {
 export default DataGrid;
 
 
-/**
- * { this.state.airports.map(a => <Airport key={a.code} airport={a}></Airport>) }
- */

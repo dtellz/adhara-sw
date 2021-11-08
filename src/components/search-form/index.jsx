@@ -11,17 +11,12 @@ const SearchForm = (props) => {
 
     const [isEntitySelected, setIsEntitySelected] = useState();
     const [searchedEntity, setSearchedEntity] = useState(null);
-    // const [data, setData] = useState([]);
 
-    //executed at EntitySelect component to read data
     const changeInput = (ent) => {
         setIsEntitySelected(true);
         setSearchedEntity(ent);
 
     }
-    // const data = useFetch(searchedEntity);
-    // console.log('fetch responded:', data)
-
 
     useEffect(() => {
 
@@ -52,7 +47,6 @@ const SearchForm = (props) => {
 
     }, [searchedEntity]);
 
-    // console.log('BUEBO:  ', data)
 
     return (
         <div className='search__elements'>
