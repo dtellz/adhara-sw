@@ -10,7 +10,7 @@
 
 ## 1.- INTRODUCING [https://swapi.dev ](https://swapi.dev ) 
 
-In order to understand server responses and how we manipulate it when we fetch its endpoint we are going to introduce the data structures used in the project omitting not unused information:
+In order to understand server responses and how we manipulate it when we fetch its endpoints we are going to introduce the data structures used in the project omitting unused information:
 
 All endpoints follow the same structure: https://swapi.dev/api/entity/id
 
