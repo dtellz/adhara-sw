@@ -5,27 +5,15 @@ import Grid from '@mui/material/Grid';
 import DataGrid from "../../components/data-grid";
 import './style.css';
 import { useParams } from "react-router";
-import Loading from "../../components/loading";
-
-// People' ? data.map((elem, ind) => elem !== null ? <PeopleCard info={elem} key={ind}></PeopleCard> : '') : ''}
-//                 {data && listTitle === 'Films' ? data.map((elem, ind) => elem !== null ? <FilmCard info={elem} key={ind}></FilmCard> : '') : ''}
-//                 {data && listTitle === 'Starships' ? data.map((elem, ind) => elem !== null ? <StarshipCard info={elem} key={ind}></StarshipCard> : '') : ''}
-//                 {data && listTitle === 'Vehicles' ? data.map((elem, ind) => elem !== null ? <VehicleCard info={elem} key={ind}></VehicleCard> : '') : ''}
-//                 {data && listTitle === 'Species' ? data.map((elem, ind) => elem !== null ? <SpecieCard info={elem} key={ind}></SpecieCard> : '') : ''}
-//                 {data && listTitle === 'Planets'
 
 
 const Home = () => {
-
 
     const possibleQueries = ['people', 'films', 'starships', 'vehicles', 'species', 'planets']
 
     const [searchedData, setSearchedData] = useState();
     const [entity, setEntity] = useState();
     const [isLogData, setIsLoggedData] = useState(false);
-
-
-    // const [ pathParam, setPathParam] = useState();
 
     const { query } = useParams();
 

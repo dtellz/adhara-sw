@@ -15,7 +15,6 @@ const Header = () => {
         <Box sx={{ flexGrow: 1 }} className='header__box'>
             <AppBar position="static" color='primary'>
                 <Toolbar>
-                    {/* <h3 className='header__text'>STAR WARS</h3> */}
                     <img className='header__logo' onClick={() => { navigate('/home') }} alt='Star wars logo' src={swTitle}></img>
                 </Toolbar>
             </AppBar>
